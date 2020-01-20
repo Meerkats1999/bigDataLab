@@ -18,4 +18,24 @@ mongo --eval 'db.gameCollection.find(
     "genre": "first-person shooter"
     }
 ).pretty();' lab1
+#Update operation
 
+mongo --eval 'db.gameCollection.update(
+    {
+        "name": "Fallout 76"},
+        {$set:{"genre": "Massively multiplayer online role-playing game"}
+        }
+    )'
+mongo --eval 'db.gameCollection.find(
+    {"name":"Fallout 76"}
+    ).pretty()' lab1
+
+#Delete operation
+
+mongo --eval 'db.gameCollection.deleteOne(
+    {"name":"Fallout 76"}
+   )' lab1
+
+mongo --eval 'db.gameCollection.find(
+    {"name":"Fallout 76"}
+    ).pretty()' lab1
