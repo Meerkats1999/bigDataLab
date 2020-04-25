@@ -1,37 +1,21 @@
-# Big Data Lab Assignment - 1
+# Big Data Lab Assignment - 2
 
 ## Problem Statement:
-Create a collection called games and insert 5 documents into it and display the inserted values from collections and apply CRUD methods on it using MongoDB, the fields are as specified below 
+Create a dataset in excel as .csv file and it should contain the following fields with at least 20 sample datasets in it.
 
-Collection Name: Games(Add at least 15 documents) 
-Table 1: A Sample Document
+| Employee        | SSN | Salary | Awards | Tax Paid | Eligible for pay raise |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Ajay | 6X1032 | 25000 | 2 | YES | YES 
 
-Name
-Total Overdose
-Genre
-Action, First-person Shooter game (FPP), Shooting, 
-Creator
-Eidos Interactive
-Target Audience
-Children, Teens, Adults
-Rating
-8 (out of ten) 
-Comment
-Each game should have fields for accommodating multiple comments
+Use Hadoop MapReduce programming framework to come up with a Program which will take data from this .csv file and compute the following
+* Total Number of employess eligible for pay raise
+* Total number of cumulative awards the company had this year
 
-| Name        | Total Overdose |
-| ------------- |:-------------:|
-| Genre  | Action, First-person Shooter game (FPP), Shooting |
-| Creator      | Eidos Interactive      | 
-| Target Audience | Children, Teens, Adults|   
-| Rating  | 8 (out of ten) |
-| Comment | Each game should have fields for accomodating multiple comments |
-
-
-* Display the results in a formatted way
-* Explore the commands to insert, delete and update the entries in the collections
-* Design the front end for the project in any language to process the results from MongoDB 
-* Find out the number of games which are having a rating between 8-9
-* List out all the FPP games in the collections which is targeted audience are adults
-* Provide a search field to look for a particular game and retrieve the results based on the key from the user
-* Record your observation, results and present it to the instructors
+## Solution:
+### Platform:
+* Operating system: Manjaro 19.0.2
+* Haddop version: 3.2.1
+### Steps:
+* The solutions to both problem statements are to be found in the directories 'payRaiseElibile' and 'awardCounts'.
+* The jar files are provided in the directory 'jar files'.
+* The screenshots are provided in the directory 'screenshots'.
